@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local data and generated feature caches
+datasets/*.pkl
+datasets/raw/*.pkl
+!datasets/raw/README.md
+
+# Trained model binaries and run logs
+outputs/**/*.cbm
+outputs/**/*.log

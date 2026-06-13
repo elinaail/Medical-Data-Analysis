@@ -71,19 +71,24 @@ def extract_ecg_features(ecg: np.ndarray) -> dict:
     for lead_idx in range(num_leads):
         lead = ecg[:, lead_idx].astype(np.float64)
         p = f"lead{lead_idx + 1}"
+        lead_std = float(np.std(lead))
 
         # Базовые статистики
         features[f"{p}_mean"] = float(np.mean(lead))
         features[f"{p}_median"] = float(np.median(lead))
-        features[f"{p}_std"] = float(np.std(lead))
+        features[f"{p}_std"] = lead_std
         features[f"{p}_min"] = float(np.min(lead))
         features[f"{p}_max"] = float(np.max(lead))
         features[f"{p}_range"] = float(np.max(lead) - np.min(lead))
         features[f"{p}_rms"] = float(np.sqrt(np.mean(lead**2)))
 
         # Форма распределения
-        features[f"{p}_skew"] = float(skew(lead))
-        features[f"{p}_kurt"] = float(kurtosis(lead))
+        if lead_std > 1e-12:
+            features[f"{p}_skew"] = float(skew(lead))
+            features[f"{p}_kurt"] = float(kurtosis(lead))
+        else:
+            features[f"{p}_skew"] = 0.0
+            features[f"{p}_kurt"] = 0.0
 
         # Энергия
         energy = float(np.sum(lead**2))
@@ -127,14 +132,14 @@ def extract_ecg_features(ecg: np.ndarray) -> dict:
         features[f"{p}_std_diff"] = float(np.std(diff))
         features[f"{p}_max_abs_diff"] = float(np.max(np.abs(diff)))
 
-        if np.std(lead) > 1e-6:
+        if lead_std > 1e-6:
             features[f"{p}_autocorr1"] = float(np.corrcoef(lead[:-1], lead[1:])[0, 1])
         else:
             features[f"{p}_autocorr1"] = 0.0
 
-        features[f"{p}_cv"] = float(np.std(lead) / (np.abs(np.mean(lead)) + 1e-6))
+        features[f"{p}_cv"] = float(lead_std / (np.abs(np.mean(lead)) + 1e-6))
 
-        all_stds.append(float(np.std(lead)))
+        all_stds.append(lead_std)
         all_ranges.append(float(np.max(lead) - np.min(lead)))
         all_energies.append(energy)
 

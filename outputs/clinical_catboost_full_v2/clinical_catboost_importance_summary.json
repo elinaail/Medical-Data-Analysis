@@ -1,0 +1,152 @@
+{
+  "experiment": "clinical_catboost",
+  "feature_count": 536,
+  "n_repeats": 10,
+  "split": "validation",
+  "metric": "PR-AUC",
+  "top_k": 20,
+  "clinical_features_in_top_20": 15,
+  "baseline_features_in_top_20": 5,
+  "top_features": [
+    {
+      "feature": "clinical_sokolow_lyon_voltage",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0162500100716041,
+      "permutation_std": 0.0023494968736451,
+      "catboost_builtin_importance": 1.618091603273422
+    },
+    {
+      "feature": "clinical_lead8_qrs_max_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0115011070789923,
+      "permutation_std": 0.0023943196268567,
+      "catboost_builtin_importance": 2.056356336932652
+    },
+    {
+      "feature": "clinical_lead7_st_slope_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0069719182046641,
+      "permutation_std": 0.0011595895341508,
+      "catboost_builtin_importance": 3.543923021165014
+    },
+    {
+      "feature": "age",
+      "feature_type": "baseline",
+      "permutation_pr_auc_decrease": 0.0057726623483555,
+      "permutation_std": 0.0026069361798988,
+      "catboost_builtin_importance": 2.452250476120164
+    },
+    {
+      "feature": "lead2_skew",
+      "feature_type": "baseline",
+      "permutation_pr_auc_decrease": 0.0049655050088388,
+      "permutation_std": 0.0013466850052887,
+      "catboost_builtin_importance": 3.816676080360719
+    },
+    {
+      "feature": "clinical_lead9_qrs_max_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0042438417100798,
+      "permutation_std": 0.0015400615669455,
+      "catboost_builtin_importance": 0.930984964928894
+    },
+    {
+      "feature": "clinical_lead3_q_depth_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.003573497393,
+      "permutation_std": 0.001045660694195,
+      "catboost_builtin_importance": 1.1162976149873691
+    },
+    {
+      "feature": "lead12_hf2_energy",
+      "feature_type": "baseline",
+      "permutation_pr_auc_decrease": 0.0029146032025308,
+      "permutation_std": 0.0012789746778554,
+      "catboost_builtin_importance": 0.8728179636324658
+    },
+    {
+      "feature": "clinical_lead8_st_slope_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0026738095745671,
+      "permutation_std": 0.0008921953335953,
+      "catboost_builtin_importance": 1.141932176668621
+    },
+    {
+      "feature": "clinical_lead12_st_slope_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0024521640128982,
+      "permutation_std": 0.0011761702047311,
+      "catboost_builtin_importance": 1.078126747457658
+    },
+    {
+      "feature": "clinical_lead6_q_depth_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0019892472481515,
+      "permutation_std": 0.0006858597594591,
+      "catboost_builtin_importance": 0.5631797020217959
+    },
+    {
+      "feature": "clinical_lead4_t_amp_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0018660671296965,
+      "permutation_std": 0.001752854070958,
+      "catboost_builtin_importance": 2.3164730316567743
+    },
+    {
+      "feature": "clinical_lead1_t_inversion_ratio",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0016347715447754,
+      "permutation_std": 0.0007326793646132,
+      "catboost_builtin_importance": 0.7422657396398588
+    },
+    {
+      "feature": "clinical_lead11_t_amp_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0015831090955659,
+      "permutation_std": 0.0017181476926898,
+      "catboost_builtin_importance": 1.7000383012898734
+    },
+    {
+      "feature": "lead4_skew",
+      "feature_type": "baseline",
+      "permutation_pr_auc_decrease": 0.0014851099984197,
+      "permutation_std": 0.0008529309976823,
+      "catboost_builtin_importance": 0.7399802393052115
+    },
+    {
+      "feature": "clinical_lead10_t_amp_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0013926417110503,
+      "permutation_std": 0.0007552662910405,
+      "catboost_builtin_importance": 0.84207304353491
+    },
+    {
+      "feature": "lead7_hf2_energy",
+      "feature_type": "baseline",
+      "permutation_pr_auc_decrease": 0.0013683905152545,
+      "permutation_std": 0.0005880173654019,
+      "catboost_builtin_importance": 0.4104335008069372
+    },
+    {
+      "feature": "clinical_lead11_qrs_max_mean",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0013127973228282,
+      "permutation_std": 0.0005150846585845,
+      "catboost_builtin_importance": 0.3570749436122468
+    },
+    {
+      "feature": "clinical_lead11_q_width_mean_ms",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0013050815922294,
+      "permutation_std": 0.0007654038634128,
+      "catboost_builtin_importance": 0.7458785810829888
+    },
+    {
+      "feature": "clinical_lead4_t_inversion_ratio",
+      "feature_type": "clinical",
+      "permutation_pr_auc_decrease": 0.0011958413307035,
+      "permutation_std": 0.0005893408481444,
+      "catboost_builtin_importance": 0.4366907021856622
+    }
+  ]
+}

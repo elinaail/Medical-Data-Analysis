@@ -1,0 +1,16 @@
+{
+  "binary_superclass_mean_pr_auc": {
+    "baseline": 0.7278880416077799,
+    "clinical": 0.7911750142972823
+  },
+  "multiclass_one_vs_rest_macro_pr_auc": {
+    "baseline": 0.2596877301575531,
+    "clinical": 0.33412026555134605
+  },
+  "outputs": {
+    "binary_pr_curves": "outputs\\clinical_catboost_full_v2\\binary_superclass_pr_curves.png",
+    "multiclass_pr_curves": "outputs\\clinical_catboost_full_v2\\multiclass_16_pr_curves.png",
+    "metrics_csv": "outputs\\clinical_catboost_full_v2\\pr_curve_metrics.csv",
+    "multiclass_by_class_csv": "outputs\\clinical_catboost_full_v2\\multiclass_16_pr_auc_by_class.csv"
+  }
+}

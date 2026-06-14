@@ -1,0 +1,9 @@
+model,source,task,feature_set,mean_test_f1_macro,mean_test_pr_auc,mean_test_roc_auc,delta_pr_auc_vs_best_dl,delta_f1_vs_best_dl,delta_roc_auc_vs_best_dl
+TabNet default,experiments.ipynb / Exp-1,5 binary superclass,baseline ECG/statistical features,0.7351,0.6335,0.8369,-0.09430000000000005,-0.04410000000000003,-0.04620000000000002
+TabNet large,experiments.ipynb / Exp-2,5 binary superclass,baseline ECG/statistical features,0.5887,0.4237,0.6537,-0.3041,-0.1905,-0.22940000000000005
+TabNet Optuna,experiments.ipynb / Exp-3,5 binary superclass,baseline ECG/statistical features,0.7351,0.6335,0.8369,-0.09430000000000005,-0.04410000000000003,-0.04620000000000002
+GANDALF default,experiments.ipynb / Exp-4,5 binary superclass,baseline ECG/statistical features,0.757,0.6739,0.8543,-0.05389999999999995,-0.022199999999999998,-0.028800000000000048
+GANDALF large,experiments.ipynb / Exp-5,5 binary superclass,baseline ECG/statistical features,0.7568,0.6908,0.8651,-0.03700000000000003,-0.022399999999999975,-0.018000000000000016
+GANDALF Optuna,experiments.ipynb / Exp-6,5 binary superclass,baseline ECG/statistical features,0.7792,0.7278,0.8831,0.0,0.0,0.0
+CatBoost baseline,outputs/clinical_catboost_full_v2,5 binary superclass,baseline ECG/statistical features,0.7669369746150174,0.7278880416077799,0.8853027824813335,8.804160777986514e-05,-0.012263025384982584,0.002202782481333543
+CatBoost clinical,outputs/clinical_catboost_full_v2,5 binary superclass,baseline + clinical ECG features,0.8081482616806536,0.7911750142972822,0.9178737498982972,0.0633750142972822,0.028948261680653564,0.03477374989829718

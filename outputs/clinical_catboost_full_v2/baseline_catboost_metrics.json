@@ -1,0 +1,39 @@
+{
+  "experiment": "baseline_catboost",
+  "feature_count": 373,
+  "per_class": {
+    "CD": {
+      "f1_macro": 0.812842674300787,
+      "pr_auc": 0.7877486597584457,
+      "roc_auc": 0.8985628405971572,
+      "skipped": false
+    },
+    "HYP": {
+      "f1_macro": 0.6938327366664168,
+      "pr_auc": 0.5811331172691034,
+      "roc_auc": 0.8712576528110509,
+      "skipped": false
+    },
+    "MI": {
+      "f1_macro": 0.7344541299533525,
+      "pr_auc": 0.6844017068151346,
+      "roc_auc": 0.8558463203871094,
+      "skipped": false
+    },
+    "NORM": {
+      "f1_macro": 0.8433309630231614,
+      "pr_auc": 0.8970941402938082,
+      "roc_auc": 0.9233488298301957,
+      "skipped": false
+    },
+    "STTC": {
+      "f1_macro": 0.7502243691313693,
+      "pr_auc": 0.6890625839024075,
+      "roc_auc": 0.8774982687811534,
+      "skipped": false
+    }
+  },
+  "mean_f1_macro": 0.7669369746150174,
+  "mean_pr_auc": 0.7278880416077799,
+  "mean_roc_auc": 0.8853027824813335
+}

@@ -1,0 +1,39 @@
+{
+  "experiment": "clinical_catboost",
+  "feature_count": 536,
+  "per_class": {
+    "CD": {
+      "f1_macro": 0.809355612866058,
+      "pr_auc": 0.8087164548342891,
+      "roc_auc": 0.915416038199095,
+      "skipped": false
+    },
+    "HYP": {
+      "f1_macro": 0.7536763974510017,
+      "pr_auc": 0.6415268915373451,
+      "roc_auc": 0.8963657027977417,
+      "skipped": false
+    },
+    "MI": {
+      "f1_macro": 0.8090905664680923,
+      "pr_auc": 0.805484084905471,
+      "roc_auc": 0.9123266560718273,
+      "skipped": false
+    },
+    "NORM": {
+      "f1_macro": 0.8631426281651318,
+      "pr_auc": 0.9223080052385512,
+      "roc_auc": 0.9422166560899469,
+      "skipped": false
+    },
+    "STTC": {
+      "f1_macro": 0.8054761034529843,
+      "pr_auc": 0.7778396349707555,
+      "roc_auc": 0.923043696332875,
+      "skipped": false
+    }
+  },
+  "mean_f1_macro": 0.8081482616806536,
+  "mean_pr_auc": 0.7911750142972822,
+  "mean_roc_auc": 0.9178737498982972
+}
